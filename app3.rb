@@ -13,7 +13,7 @@ puts ""
 
 my_game = Game.new("Wolverine")
 
-binding.pry
+
 
 while my_game.is_still_ongoing?
   
@@ -35,6 +35,8 @@ while my_game.is_still_ongoing?
 
 
   # bots player attack
-  puts "\nLes bots players t'attaquent !"
-  my_game.enemies_attack
+  #puts "\nLes bots players t'attaquent !"
+  #my_game.enemies_attack
 end
+
+binding.pry
