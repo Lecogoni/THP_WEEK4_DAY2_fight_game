@@ -70,7 +70,7 @@ class HumanPlayer < Player
 
   # détermine la valeur de weapon_level selon un lancé de dés
   def search_weapon
-    new_weapon = compute_damage
+    new_weapon = rand(1..6)
     puts "Tu as trouvé une arme de niveau #{new_weapon}"
     if new_weapon > weapon_level
       puts "Youhou ! elle est meilleure que ton arme actuelle : tu la prends."
@@ -105,7 +105,7 @@ class HumanPlayer < Player
   def add_health_pack(health_pack)
     @life_points = life_points + health_pack
     @life_points = 100 if life_points > 100 
-    puts " Tub as maintenant #{life_points} point de vie"
+    puts " Tu as maintenant #{life_points} point de vie"
   end
   
   
